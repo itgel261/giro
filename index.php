@@ -6,11 +6,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form input data GIRO</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
 
     <body>
         <h3>Input Data GIRO</h3>
-        <a href="data_giro.php">Data Giro</a>
+        <a href="data_giro.php" class="btn btn-info">Database Giro</a>
         <form method="POST" action="">
             <table>
                 <tr>
@@ -60,7 +61,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" name="Simpan" size="18"></td>
+                    <td><input type="submit" name="Simpan" size="18" class="btn btn-primary"></td>
                 </tr>
             </table>
         </form>

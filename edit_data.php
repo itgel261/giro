@@ -5,11 +5,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Form edit data mahasiswa</title>
+        <title>Form edit data Giro</title>
     </head>
 
     <body>
-        <h3>Edit Data Mahasiswa</h3>
+        <h3>Edit Data Giro</h3>
         <?php
     include "koneksi.php";
     $editData = mysqli_query($connect, "SELECT * FROM datagiro WHERE nogiro='$_GET[nogiro]'");

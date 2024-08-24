@@ -5,12 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Data Giro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
 
     <body>
         <h3>Data-Data GIRO yang berhasil di Simpan</h3>
-        <a href="index.php">Tambah GIRO Mahasiswa</a>
-        <table border="1" cellspacing="0" width="50%">
+        
+        <table border="1" cellspacing="0" width="100%">
             <tr>
                 <th>No.</th>
                 <th>No Giro</th>
@@ -24,7 +25,7 @@
                 <th>Nomor Rekening</th>
                 <th>Bank Penerima</th>
                 <th>Keterangan</th>
-                <th>Option</th>
+                <th>Option </th>
             </tr>
             <?php
         include "koneksi.php";
@@ -45,14 +46,17 @@
                             <td>$a[bankpenerima]</td>
                             <td>$a[keterangan]</td>
                             <td align='center'>
-                                <a href='edit_mhs.php?nim=$a[nogiro]'>Edit</a> | 
-                                <a href='hapus_mhs.php?nim=$a[nogiro]'>Hapus</a>
+                                <a href='edit_data.php?nogiro=$a[nogiro]' class='btn btn-warning'>Edit</a> | 
+                                <a href='hapus_data.php?nogiro=$a[nogiro]' class='btn btn-danger'>Hapus</a>
                             </td>
                         </tr>";
             $No++;
         }
         ?>
+        
         </table>
+        <br>
+        <a href="index.php" class="btn btn-success">Tambah Data GIRO</a>
     </body>
 
 </html>
